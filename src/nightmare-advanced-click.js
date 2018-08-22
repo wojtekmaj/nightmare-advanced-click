@@ -2,9 +2,12 @@ const Nightmare = require('nightmare');
 
 Nightmare.action('middleClick', function middleClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const el = document.querySelector(sel);
+    const element = document.querySelector(s);
+    if (!element) {
+      throw new Error(`Unable to find element by selector: ${s}`);
+    }
 
-    const bounds = el.getBoundingClientRect();
+    const bounds = element.getBoundingClientRect();
     const xPos = bounds.left;
     const yPos = bounds.top;
 
@@ -18,15 +21,18 @@ Nightmare.action('middleClick', function middleClickAction(selector, done) {
       button: 1,
     });
 
-    return el.dispatchEvent(event);
+    return element.dispatchEvent(event);
   }, done, selector);
 });
 
 Nightmare.action('rightClick', function rightClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const el = document.querySelector(sel);
+    const element = document.querySelector(s);
+    if (!element) {
+      throw new Error(`Unable to find element by selector: ${s}`);
+    }
 
-    const bounds = el.getBoundingClientRect();
+    const bounds = element.getBoundingClientRect();
     const xPos = bounds.left;
     const yPos = bounds.top;
 
@@ -40,15 +46,18 @@ Nightmare.action('rightClick', function rightClickAction(selector, done) {
       button: 2,
     });
 
-    return el.dispatchEvent(event);
+    return element.dispatchEvent(event);
   }, done, selector);
 });
 
 Nightmare.action('ctrlClick', function ctrlClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const el = document.querySelector(sel);
+    const element = document.querySelector(s);
+    if (!element) {
+      throw new Error(`Unable to find element by selector: ${s}`);
+    }
 
-    const bounds = el.getBoundingClientRect();
+    const bounds = element.getBoundingClientRect();
     const xPos = bounds.left;
     const yPos = bounds.top;
 
@@ -62,15 +71,18 @@ Nightmare.action('ctrlClick', function ctrlClickAction(selector, done) {
       ctrlKey: true,
     });
 
-    return el.dispatchEvent(event);
+    return element.dispatchEvent(event);
   }, done, selector);
 });
 
 Nightmare.action('altClick', function altClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const el = document.querySelector(sel);
+    const element = document.querySelector(s);
+    if (!element) {
+      throw new Error(`Unable to find element by selector: ${s}`);
+    }
 
-    const bounds = el.getBoundingClientRect();
+    const bounds = element.getBoundingClientRect();
     const xPos = bounds.left;
     const yPos = bounds.top;
 
@@ -84,15 +96,18 @@ Nightmare.action('altClick', function altClickAction(selector, done) {
       altKey: true,
     });
 
-    return el.dispatchEvent(event);
+    return element.dispatchEvent(event);
   }, done, selector);
 });
 
 Nightmare.action('shiftClick', function shiftClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const el = document.querySelector(sel);
+    const element = document.querySelector(s);
+    if (!element) {
+      throw new Error(`Unable to find element by selector: ${s}`);
+    }
 
-    const bounds = el.getBoundingClientRect();
+    const bounds = element.getBoundingClientRect();
     const xPos = bounds.left;
     const yPos = bounds.top;
 
@@ -106,15 +121,18 @@ Nightmare.action('shiftClick', function shiftClickAction(selector, done) {
       shiftKey: true,
     });
 
-    return el.dispatchEvent(event);
+    return element.dispatchEvent(event);
   }, done, selector);
 });
 
 Nightmare.action('cmdClick', function cmdClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const el = document.querySelector(sel);
+    const element = document.querySelector(s);
+    if (!element) {
+      throw new Error(`Unable to find element by selector: ${s}`);
+    }
 
-    const bounds = el.getBoundingClientRect();
+    const bounds = element.getBoundingClientRect();
     const xPos = bounds.left;
     const yPos = bounds.top;
 
@@ -128,6 +146,6 @@ Nightmare.action('cmdClick', function cmdClickAction(selector, done) {
       metaKey: true,
     });
 
-    return el.dispatchEvent(event);
+    return element.dispatchEvent(event);
   }, done, selector);
 });
