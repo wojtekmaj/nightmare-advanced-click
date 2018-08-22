@@ -1,6 +1,6 @@
 {
   "name": "nightmare-advanced-click",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha.2",
   "description": "Extends Nightmare with .rightClick(), .middleClick(), .ctrlClick() and other actions.",
   "main": "dist/nightmare-advanced-click.js",
   "es6": "src/nightmare-wait-for-url.js",
