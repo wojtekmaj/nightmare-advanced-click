@@ -1,0 +1,54 @@
+{
+  "name": "nightmare-advanced-click",
+  "version": "1.0.0-alpha",
+  "description": "Extends Nightmare with .rightClick(), .middleClick(), .ctrlClick() and other actions.",
+  "main": "dist/nightmare-advanced-click.js",
+  "es6": "src/nightmare-wait-for-url.js",
+  "scripts": {
+    "build": "babel src -d dist --ignore src/__tests__",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run test-eslint",
+    "test-eslint": "eslint src/ --ext .jsx,.js"
+  },
+  "keywords": [
+    "nightmare",
+    "phantomjs",
+    "nightmarejs",
+    "rightClick",
+    "middleClick",
+    "ctrlClick",
+    "altClick",
+    "shiftClick",
+    "cmdClick"
+  ],
+  "author": {
+    "name": "Wojciech Maj",
+    "email": "kontakt@wojtekmaj.pl"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "nightmare": "^2.3.0 || ^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wojtekmaj/nightmare-advanced-click"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
