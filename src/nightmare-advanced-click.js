@@ -2,9 +2,9 @@ const Nightmare = require('nightmare');
 
 Nightmare.action('middleClick', function middleClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const element = document.querySelector(s);
+    const element = document.querySelector(sel);
     if (!element) {
-      throw new Error(`Unable to find element by selector: ${s}`);
+      throw new Error(`Unable to find element by selector: ${sel}`);
     }
 
     const bounds = element.getBoundingClientRect();
@@ -27,9 +27,9 @@ Nightmare.action('middleClick', function middleClickAction(selector, done) {
 
 Nightmare.action('rightClick', function rightClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const element = document.querySelector(s);
+    const element = document.querySelector(sel);
     if (!element) {
-      throw new Error(`Unable to find element by selector: ${s}`);
+      throw new Error(`Unable to find element by selector: ${sel}`);
     }
 
     const bounds = element.getBoundingClientRect();
@@ -52,9 +52,9 @@ Nightmare.action('rightClick', function rightClickAction(selector, done) {
 
 Nightmare.action('ctrlClick', function ctrlClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const element = document.querySelector(s);
+    const element = document.querySelector(sel);
     if (!element) {
-      throw new Error(`Unable to find element by selector: ${s}`);
+      throw new Error(`Unable to find element by selector: ${sel}`);
     }
 
     const bounds = element.getBoundingClientRect();
@@ -77,9 +77,9 @@ Nightmare.action('ctrlClick', function ctrlClickAction(selector, done) {
 
 Nightmare.action('altClick', function altClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const element = document.querySelector(s);
+    const element = document.querySelector(sel);
     if (!element) {
-      throw new Error(`Unable to find element by selector: ${s}`);
+      throw new Error(`Unable to find element by selector: ${sel}`);
     }
 
     const bounds = element.getBoundingClientRect();
@@ -102,9 +102,9 @@ Nightmare.action('altClick', function altClickAction(selector, done) {
 
 Nightmare.action('shiftClick', function shiftClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const element = document.querySelector(s);
+    const element = document.querySelector(sel);
     if (!element) {
-      throw new Error(`Unable to find element by selector: ${s}`);
+      throw new Error(`Unable to find element by selector: ${sel}`);
     }
 
     const bounds = element.getBoundingClientRect();
@@ -127,9 +127,9 @@ Nightmare.action('shiftClick', function shiftClickAction(selector, done) {
 
 Nightmare.action('cmdClick', function cmdClickAction(selector, done) {
   this.evaluate_now((sel) => {
-    const element = document.querySelector(s);
+    const element = document.querySelector(sel);
     if (!element) {
-      throw new Error(`Unable to find element by selector: ${s}`);
+      throw new Error(`Unable to find element by selector: ${sel}`);
     }
 
     const bounds = element.getBoundingClientRect();
