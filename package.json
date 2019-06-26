@@ -6,9 +6,9 @@
   "es6": "src/nightmare-wait-for-url.js",
   "scripts": {
     "build": "babel src -d dist --ignore **/__tests__",
-    "prepublishOnly": "yarn run build",
-    "test": "yarn run test-eslint",
-    "test-eslint": "eslint src/ --ext .jsx,.js"
+    "lint": "eslint src/ --ext .jsx,.js",
+    "prepublishOnly": "yarn build",
+    "test": "yarn lint"
   },
   "keywords": [
     "nightmare",
@@ -33,9 +33,9 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "eslint": "^5.5.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.18.0"
   },
   "files": [
     "LICENSE",
