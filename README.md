@@ -1,5 +1,4 @@
-
-![downloads](https://img.shields.io/npm/dt/nightmare-advanced-click.svg) ![build](https://img.shields.io/travis/wojtekmaj/nightmare-advanced-click/master.svg) ![dependencies](https://img.shields.io/david/wojtekmaj/nightmare-advanced-click.svg
+[![npm](https://img.shields.io/npm/v/nightmare-advanced-click.svg)](https://www.npmjs.com/package/nightmare-advanced-click) ![downloads](https://img.shields.io/npm/dt/nightmare-advanced-click.svg) ![dependencies](https://img.shields.io/david/wojtekmaj/nightmare-advanced-click.svg
 ) ![dev dependencies](https://img.shields.io/david/dev/wojtekmaj/nightmare-advanced-click.svg)
 
 # nightmare-advanced-click
