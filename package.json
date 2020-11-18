@@ -7,7 +7,7 @@
   "scripts": {
     "build": "babel src -d dist --ignore **/__tests__",
     "lint": "eslint src/ --ext .jsx,.js",
-    "prepublishOnly": "yarn build",
+    "prepack": "yarn build",
     "test": "yarn lint"
   },
   "keywords": [
